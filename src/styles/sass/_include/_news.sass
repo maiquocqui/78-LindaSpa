@@ -1,0 +1,43 @@
+.news-page
+	@extend .service-page
+	padding: 60px 0
+	&:before
+		content: ''
+		display: none
+	.news-list
+		.news-col
+			margin-bottom: 30px
+			figure
+				.news-img
+					display: block
+					img
+						width: 100%
+				figcaption
+					text-align: center
+					padding: 15px 0
+					time
+						display: block
+						+fs(13rem)
+						letter-spacing: 2px
+						color: darken($white,40%)
+						margin-bottom: 10px
+					.news-name
+						margin-bottom: 10px
+						a
+							display: block
+							+fs(20rem)
+							// +font-title
+							font-weight: 700
+							color: $dyellow
+					.news-des
+						+fs(14rem)
+						color: $main
+						margin-bottom: 10px
+					.link
+						font-weight: 300
+						text-transform: uppercase
+						color: darken($white,60%)
+						+fs(13rem)
+						&:after
+							content: '\f178'
+							margin-left: 5px

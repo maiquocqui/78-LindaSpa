@@ -1,0 +1,77 @@
+.service-page
+	padding: 60px 0
+	// padding: 120px 0 60px
+	// +pos(rel,null)
+	// &:before
+	// 	content: ''
+	// 	display: block
+	// 	width: 32px
+	// 	height: 105px
+	// 	background: url(../img/sectionbg.png) center center no-repeat
+	// 	background-size: cover
+	// 	+pos(abs, 0 null null 50%)
+	// 	+transform(translateX(-50%))
+	.content
+		margin-bottom: 15px
+		+ .share
+			margin-bottom: 40px
+.other-service
+	// padding: 120px 0 60px
+	// +pos(rel,null)
+	// &:before
+	// 	content: ''
+	// 	display: block
+	// 	width: 32px
+	// 	height: 105px
+	// 	background: url(../img/sectionbg.png) center center no-repeat
+	// 	background-size: cover
+	// 	+pos(abs, 0 null null 50%)
+	// 	+transform(translateX(-50%))
+.service-list
+	.service-col
+		margin-bottom: 20px
+		figure
+			.service-img
+				display: block
+				margin: 0 auto 30px
+				+pos(rel,null)
+				width: 180px
+				height: 180px
+				+bor-rad(100px)
+				overflow: hidden
+				box-shadow: 0px 10px 20px -10px color-rgba($dyellow,1)
+				+transition(all,1s)
+				img
+					+transition(all,0.5s)
+				.service-name
+					+pos(abs, null 0 0 0)
+					+fs(20rem)
+					// +font-title
+					text-align: center
+					color: $white
+					font-weight: 700
+					padding: 15px 0
+					background: linear-gradient(color-rgba($lyellow,0),color-rgba($lyellow,1))
+			figcaption
+				max-width: 250px
+				text-align: center
+				margin: 0 auto
+				.service-des
+					+fs(14rem)
+					color: darken($white,60%)
+					margin-bottom: 20px
+				.link
+					+fs(14rem)
+					color: $dyellow
+					&:after
+						content: '\f178'
+						margin-left: 10px
+						// +transition(all,0.3s)
+			&:hover
+				.service-img
+					// +transform(rotateZ(360deg))
+					box-shadow: 0px 10px 20px 0px color-rgba($dyellow,1)
+					img
+						+transform(scale3d(1.2,1.2,1))
+				figcaption
+					.link

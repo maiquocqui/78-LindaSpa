@@ -1,0 +1,47 @@
+section.breadcrumb-wrap.clearfix
+	.breadcrumb-banner
+		img(src="img/banner/br1.jpg", alt="")
+	.container
+		.breadcrumb-content
+			h3.pagename
+			ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+				li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+					a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+						span(itemprop='name') Trang chủ
+					meta(itemprop='position', content='1')
+				li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+					a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+						span(itemprop='name') Dịch vụ
+					meta(itemprop='position', content='2')
+section.service-page.clearfix
+	.container
+		h1.home-title.text-center Dịch vụ
+		.service-list
+			.row
+				.col-12.col-md-4
+					.service-col
+						figure
+							a.service-img(href="#!")
+								img(src="img/service/1.png", alt="")
+								h3.service-name Face
+							figcaption
+								.service-des Liệu trình chăm sóc giúp làm chậm quá trình lão hóa da, kích thích sản sinh collagen.
+								a.link(href="#!") Xem thêm
+				.col-12.col-md-4
+					.service-col
+						figure
+							a.service-img(href="#!")
+								img(src="img/service/2.png", alt="")
+								h3.service-name Body
+							figcaption
+								.service-des Giúp cải thiện các dấu hiệu hư tổn, kích ứng da và mang đến độ hồng hào khỏe mạnh tới 90% chỉ sau 1 liệu trình.
+								a.link(href="#!") Xem thêm
+				.col-12.col-md-4
+					.service-col
+						figure
+							a.service-img(href="#!")
+								img(src="img/service/3.png", alt="")
+								h3.service-name Foot
+							figcaption
+								.service-des Thư giãn toàn thân phù hợp với cơ địa của người Việt Nam còn có tác dụng chữa bệnh và làm đẹp độc đáo.
+								a.link(href="#!") Xem thêm

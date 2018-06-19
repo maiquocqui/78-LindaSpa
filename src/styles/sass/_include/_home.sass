@@ -1,0 +1,346 @@
+.home-title
+	+fs(36rem)
+	// font-weight: 500
+	font-family: 'Dancing Script'
+	// +font-title
+	color: $byellow
+	margin-bottom: 20px
+	// &:after
+	// 	content: ''
+	// 	display: block
+	// 	width: 50px
+	// 	height: 2px
+	// 	background: $lyellow
+	// 	margin: 10px 0 0
+	// &.text-center
+	// 	&:after
+	// 		margin: 10px auto 0
+.page-title
+	+fs(24rem)
+	font-weight: 500
+	// +font-title
+	color: $main
+	margin-bottom: 20px
+	&:after
+		content: ''
+		display: block
+		width: 50px
+		height: 2px
+		background: $lyellow
+		margin: 10px 0 0
+	&.text-center
+		&:after
+			margin: 10px auto 0
+
+.home-des
+	+fs(14rem)
+	color: darken($white,60%)
+	max-width: 400px
+	margin: 0 auto 40px
+
+.home-service
+	padding: 120px 0 40px
+	+pos(rel,null)
+	&:before
+		content: ''
+		display: block
+		width: 32px
+		height: 105px
+		background: url(../img/sectionbg.png) center center no-repeat
+		background-size: cover
+		+pos(abs, 0 null null 50%)
+		+transform(translateX(-50%))
+	&:after
+		content: ''
+		+pos(abs,100% 0 null 0)
+		z-index: 3
+		background: url(../img/service/serviceafter.png) center center no-repeat
+		background-size: 100% 100%
+		height: 40px
+	.service-list
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translate(0,-50%))
+			+fs(0)
+			z-index: 5
+			width: 40px
+			line-height: 40px
+			height: 40px
+			+bor-rad(50px)
+			color: $white
+			background: $dyellow
+			opacity: 0.5
+			&:before
+				content: ''
+				+fs(24rem)
+			&:hover
+				opacity: 1
+			&.slick-disabled
+				&:hover
+					opacity: 0.5
+		.slick-prev
+			left: 0
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 0
+			&:before
+				content: '\f105'
+		
+
+.home-benefit
+	padding: 150px 0 0
+	background: url(../img/benefit/bg.jpg) center center no-repeat
+	background-size: cover
+	+pos(rel,null)
+	&:before
+		content: ''
+		display: block
+		width: 32px
+		height: 105px
+		background: url(../img/sectionbg.png) center center no-repeat
+		background-size: cover
+		+pos(abs, 30px null null 50%)
+		+transform(translateX(-50%))
+		filter: grayscale(100%) brightness(200%)
+	.home-title
+		color: $white
+		text-shadow: 0px 3px 5px color-rgba($dyellow,0.4)
+		margin-bottom: 110px
+		&:after
+			display: none
+	.benefit-wrap
+		+pos(rel,null)
+		> .benefit-img
+			+pos(abs, null 0 0 0)
+			text-align: center
+		.benefit-content
+			+pos(rel,null)
+			z-index: 3
+			.benefit-list
+				margin-bottom: 80px
+				+flexbox
+				flex-wrap: wrap
+				&.benefit-list2
+					justify-content: flex-end
+					.benefit
+						&:first-child, &:last-child
+							margin-left: 0
+							margin-right: 45px
+				.benefit
+					width: 330px
+					margin-bottom: 70px
+					&:first-child, &:last-child
+						margin-left: 45px
+					&:last-child
+						margin-bottom: 0
+					figure
+						+flexbox
+						align-items: center
+						align-content: center
+						.benefit-img
+							width: 85px
+							+flexbox
+							justify-content: flex-start
+						figcaption
+							width: calc(100% - 85px)
+							.benefit-name
+								+fs(20rem)
+								// +font-title
+								font-weight: 700
+								color: $white 
+								text-shadow: 0px 3px 5px color-rgba($dyellow,0.4)
+								margin-bottom: 10px
+							.benefit-des
+								+fs(14rem)
+								color: $white
+								text-shadow: 0px 3px 5px color-rgba($dyellow,0.4)
+
+.home-product
+	padding: 120px 0 40px
+	+pos(rel,null)
+	&:before
+		content: ''
+		display: block
+		width: 32px
+		height: 105px
+		background: url(../img/sectionbg.png) center center no-repeat
+		background-size: cover
+		+pos(abs, 0 null null 50%)
+		+transform(translateX(-50%))
+	.home-title
+		+pos(rel,null)
+		z-index: 5
+	.product-bg
+		+pos(abs, 50% 0 null null)
+		+transform(translate(0,-50%))
+	.product-list
+		+pos(rel,null)
+		z-index: 10
+		margin-bottom: 50px
+		&:before
+			content: ''
+			+pos(abs, 0 null 0 0)
+			width: 1px
+			background: $white
+			z-index: 1
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translate(0,-50%))
+			+fs(0)
+			z-index: 5
+			width: 40px
+			height: 40px
+			line-height: 40px
+			+bor-rad(50px)
+			color: $white
+			background: $dyellow
+			opacity: 0.5
+			&:before
+				content: ''
+				+fs(24rem)
+			&:hover
+				opacity: 1
+			&.slick-disabled
+				&:hover
+					opacity: 0.5
+		.slick-prev
+			left: -40px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: -40px
+			&:before
+				content: '\f105'
+		.item
+			.product-col
+				figure
+					.product-img
+						+pos(rel,null)
+						&:before
+							content: ''
+							+pos(abs, 0 null 0 0)
+							width: 1px
+							background: linear-gradient(color-rgba($black,0),color-rgba($black,1),color-rgba($black,0))
+							opacity: 0.2
+	.btn-wrap
+		text-align: center
+		+pos(rel,null)
+		z-index: 5
+		.btn-viewmore
+			+mainbutton
+			display: inline-block
+
+.home-promotion
+	padding: 20px 0 0
+	.promotion-wrap
+		+pos(rel,null)
+		+flexbox
+		justify-content: flex-end
+	.promotion-img
+	.promotion-content
+		+pos(abs, 30px null 30px 0)
+		width: 430px
+		padding: 90px 30px 35px
+		background: #f1e8ce url(../img/promotion/bg.png) bottom right no-repeat
+		+bor-rad(5px)
+		overflow: hidden
+		&:before
+			content: ''
+			display: block
+			width: 32px
+			height: 105px
+			background: url(../img/sectionbg.png) center center no-repeat
+			background-size: cover
+			+pos(abs, -20px null null 30px)
+			// +transform(translateX(-50%))
+	.promotion-list
+		.promotion
+			display: block
+			+bor-rad(5px)
+			+fs(14rem)
+			line-height: 1.7
+			color: darken($white,60%)
+			padding: 15px 35px
+			&:hover
+				background: #d5b96c
+				color: $white
+.home-news
+	padding: 120px 0 40px
+	+pos(rel,null)
+	&:before
+		content: ''
+		display: block
+		width: 32px
+		height: 105px
+		background: url(../img/sectionbg.png) center center no-repeat
+		background-size: cover
+		+pos(abs, 0px null null 50%)
+		+transform(translateX(-50%))
+	.news-list
+		.row
+			margin: 0px -10px
+		.col-12
+			padding: 0px 10px
+			margin-bottom: 20px
+		.news-col
+			figure
+				.news-img
+					display: block
+					img
+				figcaption
+					padding: 15px 0
+					.news-name
+						margin-bottom: 10px
+						a
+							display: block
+							color: darken($white,60%)
+							+fs(20rem)
+							// +font-title
+							font-weight: 700
+							&:hover
+								color: $dyellow
+					.news-des
+						+fs(14rem)
+						color: darken($white,60%)
+.home-schedule
+	+pos(rel,null)
+	margin-bottom: 60px
+	.schedule-bg
+		+pos(abs, 0 null 0 0)
+		right: 0
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.schedule-form
+		padding: 40px
+		background: #e7d4a6
+		+pos(rel,null)
+		z-index: 5
+		.home-title
+			color: $main
+			&:after
+				display: none
+		.form-wrap
+			.form-group
+				margin-bottom: 10px
+				.form-control
+					border: none
+					background: none
+					padding: 10px 0
+					+fs(14rem)
+					+bor-rad(0)
+					color: $main
+					border-bottom: 1px solid $dyellow
+					&::-webkit-input-placeholder
+						color: $main
+						opacity: 1
+		.frm-btn
+			padding-top: 30px
+			text-align: right
+		input[type="submit"]
+			+mainbutton
+			display: inline-block
+			border: none
+			font-weight: 500

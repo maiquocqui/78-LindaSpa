@@ -1,0 +1,48 @@
+section.breadcrumb-wrap.clearfix
+	.breadcrumb-banner
+		img(src="img/banner/br1.jpg", alt="")
+	.container
+		.breadcrumb-content
+			h3.pagename
+			ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+				li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+					a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+						span(itemprop='name') Trang chủ
+					meta(itemprop='position', content='1')
+				li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+					a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+						span(itemprop='name') Liên hệ
+					meta(itemprop='position', content='2')
+section.contact-page.clearfix
+	.container
+		h1.home-title.text-center Liên hệ
+		.row
+			.col-12.col-lg-6
+				.contact-map
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.589815712645!2d106.65854481838166!3d10.797550178780185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529315441fa2b%3A0xa6f3a15892e03a5f!2zNCBIb8OgbmcgVmnhu4d0LCBQaMaw4budbmcgNCwgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1511490775171" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen)
+			.col-12.col-lg-6
+				.contact-form
+					.module-title Xin vui lòng điền đầy đủ thông tin vào form phía dưới và gửi đến chúng tôi để chúng tôi kịp thời hỗ trợ bạn!
+					.form-wrap
+						.form-row
+							.form-group.col-12.col-md-6
+								input.form-control(type="text" placeholder="Họ và tên")
+							.form-group.col-12.col-md-6
+								input.form-control(type="text" placeholder="Email")
+							.form-group.col-12.col-md-6
+								input.form-control(type="text" placeholder="Số điện thoại")
+							.form-group.col-12.col-md-6
+								input.form-control(type="text" placeholder="Địa chỉ")
+							.form-group.col-12
+								input.form-control(type="text" placeholder="Tiêu đề")
+							.form-group.col-12
+								textarea.form-control(name="", cols="30", rows="4", placeholder="Nội dung")
+							.frm-btn.col-12
+								input(type="submit", value="Gửi")
+			//- .col-12
+				.contact-info
+					.page-title.text-center Thông tin liên hệ
+					ul
+						li Open: 9AM - Close: 9PM
+						li Chi nhánh 1: 8A1 Nguyễn Cảnh Chân, P. Nguyễn Cư Trinh, Q.1 - Tel: 028 3920 0065 - 0917 455 665
+						li Chi nhánh 2: 1/53-55 Hoàng Việt, P.4, Q.Tân Bình - Tel: 028 3811 3065 - 0917 092 665

@@ -1,0 +1,60 @@
+.banner-wrap
+	.banner
+		+pos(rel,null)
+		&:after
+			content: ''
+			+pos(abs, null 0 0 0)
+			height: 36px
+			background: url(../img/bannerbg.png)
+			background-size: 100% 100%
+			z-index: 2
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translate(0,-50%))
+			+fs(0)
+			z-index: 5
+			width: 40px
+			height: 40px
+			line-height: 38px
+			text-align: center
+			background: $white
+			color: darken($white,40%)
+			+bor-rad(50px)
+			// border: 1px solid darken($white,10%)
+			box-shadow: 0px 10px 20px -10px color-rgba($black,0.3)
+			&:before
+				content: ''
+				+fs(24rem)
+			&:hover
+				color: $dyellow
+				box-shadow: 0px 10px 20px -10px color-rgba($black,1)
+		.slick-prev
+			left: 30px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 30px
+			&:before
+				content: '\f105'
+		.slick-dots
+			+pos(abs, null null 0px 50%)
+			z-index: 5
+			+transform(translate(-50%,0))
+			+flexbox
+			justify-content: center
+			align-content: center
+			li
+				width: 14px
+				height: 14px
+				+bor-rad(50px)
+				border: 1px solid $lyellow
+				+ li
+					margin-left: 10px
+				&.slick-active
+					background: $lyellow
+				button
+					display: none
+		.img
+			display: block
+			img
+				width: 100%

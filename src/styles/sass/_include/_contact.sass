@@ -1,0 +1,20 @@
+.contact-page
+	@extend .service-page
+	padding: 60px 0
+	&:before
+		content: ''
+		display: none
+	.contact-map
+		+bor-rad(5px)
+		overflow: hidden
+		border: 1px solid darken($white,15%)
+	.contact-form
+		.module-title
+			margin-bottom: 10px
+			+fs(14rem)
+		.form-wrap
+			input[type="submit"]
+				+mainbutton
+				display: inline-block
+				line-height: 40px
+				border: none

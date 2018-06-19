@@ -1,0 +1,143 @@
+body
+	padding-top: 130px
+header
+	+pos(fix,0 0 null 0)
+	z-index: 1000
+	background: $white
+	&:after
+		content: ''
+		+pos(abs, 100% 0 null 0)
+		z-index: 10
+		height: 30px
+		background: url(../img/headerbg.png) center center no-repeat
+		background-size: 100% 100%
+		+transition(all,0.5s)
+	.header-top
+		background: linear-gradient(to right, $dyellow, $lyellow, $dyellow)
+		.top-wrap
+			+flexbox
+			flex-wrap: wrap
+		.news-ticker
+			width: calc(100% - 150px)
+			.ti_news
+				a
+					display: block
+					color: $white
+					+fs(14rem)
+					line-height: 30px
+					font-weight: 500
+					width: 100%
+		.hotline
+			width: 150px
+			text-align: right
+			a
+				color: $white
+				+fs(16rem)
+				font-weight: 700
+				&:before
+					content: '\f095'
+					font-weight: normal
+					+transform(scale(-1,1))
+					margin-right: 5px
+	.header-main
+		.sitelogo
+			float: left
+			+flexbox
+			height: 100px
+			justify-content: center
+			align-items: flex-end
+			align-content: flex-end
+			+transition(all,0.5s)
+			a
+				display: block
+			img
+				height: 80px
+				+transition(all,0.5s)
+		.overlay
+		.btn-togglemenu
+		.menu
+			float: right
+			.menu-content
+				+flexbox
+				flex-wrap: wrap
+				align-items: center
+				align-content: center
+				.menu-wrap
+					ul.menu-link
+						+flexbox
+						height: 100px
+						align-items: center
+						align-content: center
+						+transition(all,0.5s)
+						li
+							+ li
+								margin-left: 30px
+							a
+								display: block
+								+fs(16rem)
+								// +font-title
+								color: $lyellow
+								// font-weight: 700
+								text-transform: uppercase
+							&:hover
+								a
+									color: $pink
+							&.active
+								a
+									color: $pink
+				.btn-cosmetic
+					line-height: 40px
+					padding: 0px 20px 0px 50px
+					// +font-title
+					color: $white
+					+bor-rad(50px)
+					overflow: hidden
+					background: linear-gradient($dyellow,$lyellow)
+					+pos(rel,null)
+					margin-left: 30px
+					&:hover
+						filter: brightness(110%)
+					.icon
+						+flexbox
+						justify-content: center
+						align-items: center
+						width: 40px
+						height: 40px
+						+bor-rad(50px)
+						border: 2px solid $white
+						box-sizing: content-box
+						background: linear-gradient($dyellow,$lyellow)
+						+pos(abs, -2px null null -2px)
+					span
+						+fs(16rem)
+						font-weight: 300
+						// font-weight: 500
+	&.minimal
+		&:after
+			height: 15px
+			// display: none
+		.header-main 
+			.menu 
+				.menu-content 
+					.menu-wrap 
+						ul.menu-link
+							height: 60px
+			.sitelogo 
+				height: 60px
+				// align-items: center
+				// align-content: center
+				img
+					height: 50px
+.fly-menu
+	+pos(fix, 50% -50px null null)
+	+transform(translate(0,-50%)rotateZ(-90deg))
+	+fs(22rem)
+	font-weight: 300
+	line-height: 1
+	padding: 10px 25px
+	+bor-rad(5px 5px 0 0)
+	background: linear-gradient(to right, $lyellow,$dyellow)
+	&:hover
+		filter: brightness(120%)
+	a
+		color: $white

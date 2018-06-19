@@ -1,0 +1,110 @@
+// .homepage
+// 	footer
+// 		border-top: none
+footer
+	background: $white
+	border-top: 2px solid $dyellow
+	.footer-contact
+		padding: 30px 0
+		background: #fbf6ed
+		// border-bottom: 1px solid darken($white,20%)
+		.home-title
+			+fs(20rem)
+			color: $main
+			font-family: 'roboto'
+			margin-bottom: 15px
+			&:after
+				content: ''
+				display: block
+				background: url(../img/ftbg.png) center center no-repeat
+				background-size: cover
+				width: 87px
+				height: 19px
+				margin: 0 auto
+		.contact-info
+			+fs(14rem)
+			color: darken($white,60%)
+	.footer-main
+		padding: 40px 0
+		.footer-col
+			.sitelogo
+				margin-bottom: 30px
+				a
+					display: block
+				img
+					// height: 80px
+			.aboutus
+				+fs(13rem)
+				color: darken($white,60%)
+				margin-bottom: 40px
+				padding-right: 100px
+				+media-breakpoint-down(lg)
+					padding-right: 50px
+				+media-breakpoint-down(md)
+					padding-right: 0px
+			.social
+				+flexbox
+				a
+					+fs(24rem)
+					color: $dyellow
+					&:hover
+						color: $lyellow
+					+ a
+						margin-left: 30px
+			.title
+				+fs(20rem)
+				// +font-title
+				font-weight: 700
+				color: $main
+				margin-bottom: 30px
+				&:after
+					content: ''
+					display: block
+					width: 50px
+					height: 2px
+					background: $dyellow
+					margin-top: 10px
+			.post-list
+				.post
+					margin-bottom: 10px
+					figure
+						+flexbox
+						.post-img
+							width: 60px
+							height: 60px
+							+flexbox
+							justify-content: center
+							align-items: center
+							align-content: center
+							img
+								width: 100%
+								height: 100%
+								object-fit: cover
+						figcaption
+							width: calc(100% - 60px)
+							padding: 5px 0px 5px 15px
+							.post-name
+								+fs(14rem)
+								line-height: 1.8
+								a
+									color: $main
+						&:hover
+							figcaption
+								.post-name
+									a
+										color: $dyellow
+			.picture-list
+				.row
+					margin: 0px -10px
+				.col-4
+					padding: 0px 10px
+				.picture
+					display: block
+					margin-bottom: 20px
+					img
+						width: 100%
+	.footer-bottom
+		border-top: 1px solid darken($white,10%)
+		padding: 15px 0
+		+fs(14rem)
+		color: darken($white,40%)

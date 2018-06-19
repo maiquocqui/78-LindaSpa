@@ -1,0 +1,317 @@
+.container
+	section.product-page.clearfix
+		.row.flex.flex-wrap
+			.col-12.col-lg-6.col-xl-5
+				.slidewrap.flex.flex-wrap.wow.fadeInLeft
+					.product-slide
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/p1.jpg")
+								img(src="img/product/p1.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/p1.jpg")
+								img(src="img/product/p1.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/p1.jpg")
+								img(src="img/product/p1.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/p1.jpg")
+								img(src="img/product/p1.jpg", alt="")
+					.product-nav
+						.item
+							.img
+								img(src="img/product/p1.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/p1.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/p1.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/p1.jpg", alt="")
+			.col-12.col-lg-6.col-xl-7
+				section.product-info.clearfix.wow.fadeInRight
+					.row
+						.col-12.col-xl-7
+							.promotion.sale -20%
+							h1.product-name LIVING NATURE SENSITIVE CLEANSER
+							.product-id Thương hiệu: 
+								a(href="#!") Yves Rocher
+							.product-price.clearfix
+								.new 7.990.000đ
+								.old 10.000.000đ
+							//- .time-countdown Thời gian khuyến mãi
+								.countdown 19:10:40
+							.product-overview.clearfix
+								p Porttitor magna cras vel  libero hendrerit vel nam in sapien id urna egestas cursus. Ut enim ad minim eniam, quis nostrud exercitation ullamco laboris.
+							.product-option.flex.flex-wrap.clearfix
+								.product-color
+									.label Màu sắc:
+									ul
+										li.color
+											a.active(href="#" style='background: #222' data-toggle="tooltip" data-placement="top" title="Đen")
+										li.color
+											a.disable(href="#" style='background: #f00' data-toggle="tooltip" data-placement="top" title="Đỏ")
+										li.color
+											a(href="#" style='background: #ccc' data-toggle="tooltip" data-placement="top" title="Bạc")
+										li.color
+											a(href="#" style='background: #c3e' data-toggle="tooltip" data-placement="top" title="tím")
+										li.color
+											a(href="#" style='background: #a4f' data-toggle="tooltip" data-placement="top" title="tím đậm")
+								.product-size
+									.label Khối lượng:
+									ul
+										li.size
+											a.active(href="#") 200ml
+										li.size
+											a(href="#") 500ml
+							//- .input-number
+								.btn-spin.btn-dec -
+								input(type="text" value="1")
+								.btn-spin.btn-inc +
+							.btn-wrap.clearfix
+								a.hvr-shutter-out-horizontal.btn-buy(href="#!") Đặt mua
+								//- a.btn-wishlist(href="#!" data-toggle="tooltip" data-placement="right" title="Yêu thích") <i class="fa fa-heart" aria-hidden="true"></i>
+								//- a.buy-support(href="#!") Hướng dẫn mua hàng
+							//- .btnview-wrap.clearfix
+								a.btn-view360(href="#!" data-toggle="modal" data-target="#view360")
+									span.img
+										img(src="img/icon/view360.png", alt="")
+									span Hình 360<sup>o</sup>
+								a.btn-playvideo(href="https://www.youtube.com/watch?v=xkBD7j4_Cks" data-fancybox="video")
+									span.img
+										img(src="img/icon/video.png", alt="")
+									span Video
+							//- #view360.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+								.modal-dialog(role='document')
+									.modal-content
+										.modal-header
+											h5#exampleModalLabel.modal-title View 360<sup>o</sup>
+											button.close(type='button', data-dismiss='modal', aria-label='Close')
+												span(aria-hidden='true') ×
+										.modal-body
+											.modal-view360
+												.view360-img.flex.flex-content-center
+													img(src="img/product/p1.jpg", alt="")
+										//- .modal-footer
+											button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+											button.btn.btn-primary(type='button') Save changes
+
+							.share
+								.label Chia sẻ:
+								a(href="#") <i class="fa fa-facebook" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-google-plus" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+						.col-12.col-xl-5
+							.product-brand
+								.title 
+									span Thương hiệu
+								.logo
+									a(href="#!")
+										img(src="img/brand/1.png", alt="")
+							.product-gift
+								.title 
+									span Khuyến mãi
+								ul
+									li Tặng kèm tuýp kem trị mụn Natural Green
+									li Tặng voucher CGV giảm 30% toàn hóa đơn
+							//- .product-support
+								.title 
+									span Hỗ trợ khách hàng
+								ul
+									li Tư vấn mua hàng (09:00 - 22:00)
+										a(href="tel:123456789") 1900 1234
+									li Góp ý khiếu nại (09:00 - 18:00)
+										a(href="tel:123456789") 0981 123 456
+									li Email hỗ trợ
+										a(href="mailto:info@skywatch.vn") info@skywatch.vn
+							//- .whychooseus
+								.title 
+									span Tại sao chọn chúng tôi?
+								ul
+									li
+										.icon
+											img(src="img/icon/1.png", alt="")
+										.text Hoàn lại tiền gấp 10 lần nếu phát hiện hàng giả, hàng nhái
+									li
+										.icon
+											img(src="img/icon/2.png", alt="")
+										.text Chế độ bảo hành lên đến 5 năm - 
+											a(href="#!") Xem thêm
+									li
+										.icon
+											img(src="img/icon/3.png", alt="")
+										.text 1 đổi 1 trong vòng 7 ngày đầu tiên - 
+											a(href="#!") Xem thêm
+									li
+										.icon
+											img(src="img/icon/4.png", alt="")
+										.text Thay pin miễn phí trọn đời, không còn nỗi lo hết pin
+									li
+										.icon
+											img(src="img/icon/5.png", alt="")
+										.text Nhận hàng và thanh toán tại nhà miễn phí - 
+											a(href="#!") Xem thêm
+								
+			.col-12
+				section.product-description.clearfix
+					#responsivetabs
+						ul.tabs-list
+							li.tab-item
+								a(href='#tab-1') Đặc điểm nổi bật
+							li.tab-item
+								a(href='#tab-2') Thông số kỹ thuật
+							//- li.tab-item
+								a(href='#tab-3') View 360<sup>o</sup>
+							//- li.tab-item
+								a(href='#tab-4') Video
+							li.tab-item
+								a(href='#tab-3') Đánh giá & nhận xét
+							//- li.tab-item
+								a(href='#tab-4') Dịch vụ bảo hành
+						section#tab-1.tab-content
+							//- .title
+								span Đặc điểm nổi bật
+							.content
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						section#tab-2.tab-content
+							//- .title
+								span Thông số kỹ thuật
+							.table-specification
+								.table-responsive
+									table.product-table
+										tr 
+											td Size
+											td 200 ml, 500 ml
+						//- section#tab-3.tab-content
+
+						//- section#tab-4.tab-content
+						section#tab-3.tab-content
+							//- .title
+								span Đánh giá & nhận xét
+							.fb-comment
+								.text-center
+									img(src="img/comment.jpg", alt="")
+						//- section#tab-4.tab-content
+							//- .product-service.clearfix
+							//- 	.small-title Dịch vụ bảo hành
+							.content
+								p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nulla, reiciendis officiis odit accusantium distinctio aut quam consectetur laudantium. Nemo temporibus ullam officia incidunt inventore porro quisquam ipsum ratione aliquid!
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, reprehenderit?
+									br
+								ul
+									li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, adipisci.
+									li Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta recusandae vero aperiam! Laudantium?
+									li Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, error! Aut numquam earum neque assumenda similique natus. Delectus, inventore quis?
+									li Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt, recusandae hic non sunt corrupti dignissimos iure corporis tenetur voluptatem ea dicta dolorum perferendis veniam?
+									li Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti incidunt sequi, totam facilis autem a similique maxime, possimus impedit animi laudantium non? Quos pariatur vero magnam incidunt consequuntur. Magnam?
+
+			.col-12
+				section.product-other.clearfix
+					.small-title.wow.fadeInUp Sản phẩm liên quan
+					.other-slide.product-list
+						.item
+							.product-col
+								figure
+									a.product-img(href="#!")
+										img(src="img/product/1.jpg", alt="")
+									figcaption
+										.product-brand JAPAN
+										h3.product-name
+											a(href="#!") Kẹo Beauty Rose
+										.btn-wrap
+											a.btn-buy(href="#!") <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											.product-price 
+												.new 40.000 đ
+						.item
+							.product-col
+								figure
+									a.product-img(href="#!")
+										img(src="img/product/2.jpg", alt="")
+									figcaption
+										.product-brand Otsuka
+										h3.product-name
+											a(href="#!") Thạch Collagen C Jelly (Hộp 7 Thanh)
+										.btn-wrap
+											a.btn-buy(href="#!") <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											.product-price 
+												.new 140.000 đ
+						.item
+							.product-col
+								figure
+									a.product-img(href="#!")
+										img(src="img/product/3.jpg", alt="")
+									figcaption
+										.product-brand ASTALIFT
+										h3.product-name
+											a(href="#!") Nước Uống Bổ Sung Collagen (10 Hộp x 30ml)
+										.btn-wrap
+											a.btn-buy(href="#!") <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											.product-price 
+												.new 790.000 đ
+						.item
+							.product-col
+								figure
+									a.product-img(href="#!")
+										img(src="img/product/4.jpg", alt="")
+									figcaption
+										.product-brand OMD CHIA
+										h3.product-name
+											a(href="#!") Hạt Chia Úc Hữu Cơ - 500g
+										.btn-wrap
+											a.btn-buy(href="#!") <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											.product-price 
+												.new 280.000 đ
+						.item
+							.product-col
+								figure
+									a.product-img(href="#!")
+										img(src="img/product/1.jpg", alt="")
+									figcaption
+										.product-brand JAPAN
+										h3.product-name
+											a(href="#!") Kẹo Beauty Rose
+										.btn-wrap
+											a.btn-buy(href="#!") <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											.product-price 
+												.new 40.000 đ
+						.item
+							.product-col
+								figure
+									a.product-img(href="#!")
+										img(src="img/product/2.jpg", alt="")
+									figcaption
+										.product-brand Otsuka
+										h3.product-name
+											a(href="#!") Thạch Collagen C Jelly (Hộp 7 Thanh)
+										.btn-wrap
+											a.btn-buy(href="#!") <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											.product-price 
+												.new 140.000 đ
+						.item
+							.product-col
+								figure
+									a.product-img(href="#!")
+										img(src="img/product/3.jpg", alt="")
+									figcaption
+										.product-brand ASTALIFT
+										h3.product-name
+											a(href="#!") Nước Uống Bổ Sung Collagen (10 Hộp x 30ml)
+										.btn-wrap
+											a.btn-buy(href="#!") <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											.product-price 
+												.new 790.000 đ
+						.item
+							.product-col
+								figure
+									a.product-img(href="#!")
+										img(src="img/product/4.jpg", alt="")
+									figcaption
+										.product-brand OMD CHIA
+										h3.product-name
+											a(href="#!") Hạt Chia Úc Hữu Cơ - 500g
+										.btn-wrap
+											a.btn-buy(href="#!") <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											.product-price 
+												.new 280.000 đ

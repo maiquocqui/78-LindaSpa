@@ -1,0 +1,45 @@
+.career-page
+	padding: 60px 0
+	&:before
+		content: ''
+		display: none
+	.job-detail
+		margin: -15px 0 20px
+		time
+			display: block
+			+fs(14rem)
+			color: darken($white,40%)
+			&:before
+				content: '\f017'
+				margin-right: 5px
+	table
+		+bor-rad(5px)
+		overflow: hidden
+		border: 1px solid darken($white,10%)
+		th, td
+			padding: 10px
+			+fs(13rem)
+			vertical-align: top
+			&:nth-child(3)
+				width: 100px
+				text-align: center
+			&:last-child
+				width: 70px
+				text-align: center
+		th
+			background: $lyellow
+			border-top: none
+			border-bottom: 1px solid darken($white,10%)
+		td
+			a
+				color: $main
+				font-weight: 500
+				.fa
+					margin-right: 5px
+				&:hover
+					color: $lyellow
+			.badge
+				padding: 5px 10px
+				+fs(13rem)
+				font-weight: normal
+.other-job

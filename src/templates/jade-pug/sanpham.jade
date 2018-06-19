@@ -1,0 +1,14 @@
+extends _layout/layout
+
+block variables
+	- var title = 'LindaSpa'
+	- var bodyclass = ''
+
+block css
+
+block body 
+	include _layout/header
+	main
+		//- include _layout/breadcrumb
+		include _layout/ct-sanpham
+	include _layout/footer
